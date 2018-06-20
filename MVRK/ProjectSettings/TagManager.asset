@@ -4,11 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - projectile
-  - FxTemporaire
   - Head
-  - LHand
   - RHand
+  - LHand
+  - Laser
+  - Undefined
+  - ARPlayer
   layers:
   - Default
   - TransparentFX

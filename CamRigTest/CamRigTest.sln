@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamRigTest", "CamRigTest.csproj", "{609EE578-A8CF-B4B3-AB1F-D2351ED52E1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamRigTest.Editor", "CamRigTest.Editor.csproj", "{DC40CC18-DB33-18C6-6743-15EF7435E280}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{609EE578-A8CF-B4B3-AB1F-D2351ED52E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609EE578-A8CF-B4B3-AB1F-D2351ED52E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609EE578-A8CF-B4B3-AB1F-D2351ED52E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609EE578-A8CF-B4B3-AB1F-D2351ED52E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC40CC18-DB33-18C6-6743-15EF7435E280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC40CC18-DB33-18C6-6743-15EF7435E280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC40CC18-DB33-18C6-6743-15EF7435E280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC40CC18-DB33-18C6-6743-15EF7435E280}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

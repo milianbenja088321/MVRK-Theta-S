@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Menu.unity
-    guid: bdfe071559cd1a84cbf6c88877989d83
   - enabled: 1
     path: Assets/Scenes/AR Scene.unity
     guid: 23bbaa3e3a4db2a4bab88cb0b8831491
   - enabled: 0
     path: Assets/Scenes/VR Scene.unity
     guid: 4a96f9cfe5da83f41b5d0034b3ccec94
+  - enabled: 0
+    path: Assets/PlayerPrefabPickerTest.unity
+    guid: 83a234babac4c834e92d58c6d9e68a49

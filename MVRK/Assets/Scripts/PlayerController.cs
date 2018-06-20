@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : Photon.MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
 
@@ -10,9 +10,20 @@ public class PlayerController : Photon.MonoBehaviour
     void Update()
     {
 
-        if (photonView.isMine)
+        //if (photonView.isMine)
+        //{
+        //    Debug.Log("SetPlayerPosition being called");
+        //    SetPlayerPosition();
+        //}
+
+        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "projectile")
         {
-            SetPlayerPosition();
+            Debug.Log("Hello Projectile ********************************************");
         }
     }
 
