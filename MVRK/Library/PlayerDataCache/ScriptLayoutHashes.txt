@@ -40,6 +40,7 @@ ff29195e1247231eb8fb431e0cd079d6 Assembly-CSharp.dll:Valve.VR.InteractionSystem.
 5979728add95abdc642051d92f726e95 Assembly-CSharp.dll:.OVRDebugHeadController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SteamVR_Stats
 01edecf13d0a9e872de0d219f8eb3c5c Assembly-CSharp.dll:.OVRManager
+d1aed87741d0d7d1017e1321c0c9bc92 Assembly-CSharp.dll:.Health
 f3850d78f491607603b1e40ce7713329 Assembly-CSharp.dll:.DDOL
 0c9f0c111974d91e98a4434afc9ef2e9 Assembly-CSharp.dll:.PlayerNetworkObject
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -158,7 +159,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 5a60c7965b9f352ddb92f1d643c8606f Assembly-CSharp.dll:Valve.VR.InteractionSystem.Player
 671d62c40f947fdbe161ccd8ce53712d Assembly-CSharp.dll:Valve.VR.InteractionSystem.SpawnRenderModel
 eb3da15c32b68d9f52c60dbb287d76b1 Assembly-CSharp.dll:.ONSPAudioSource
-9e6c964039fd1f67531ac2f08fd0bb13 Assembly-CSharp.dll:.Projectile
+7da33f26e0d16a4bf237670f2ab4af72 Assembly-CSharp.dll:.Projectile
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Valve.VR.InteractionSystem.InteractableExample
@@ -291,6 +292,7 @@ ccd25ccca39fd5159c3471f7762e1ced Assembly-CSharp.dll:.OVRMonoscopic
 6aa5722444ea3486c10592141d9f4cfc Assembly-CSharp.dll:Valve.VR.InteractionSystem.DestroyOnTriggerEnter
 850bbf7a45454397c5e5856d5756baee Assembly-CSharp.dll:Valve.VR.InteractionSystem.ItemPackageSpawner
 78ebae5ed9b3edeb216da437b99754a4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.Joystick
+43a15481345ba4ae4faab67b9770add6 Assembly-CSharp.dll:.CameraDetect
 9a93f748b7c6fda90f20cf8d995df907 Assembly-CSharp.dll:.OVRModeParms
 20a64171b5e38421fc7e2a19c23f98e1 Assembly-CSharp.dll:.SteamVR_TrackedObject
 879b3df2ab67cfd00172f75f85a7a583 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SimpleMouseRotator
@@ -321,7 +323,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Valve.VR.InteractionSystem.ControllerHintsExample
 7b7745d8d1ab7fe13f98bfffbf52c18d Assembly-CSharp.dll:.OVRWaitCursor
 ce77e1965ee94201b2a49bfcafaa3075 Assembly-CSharp.dll:Valve.VR.InteractionSystem.DistanceHaptics
-1e2cf38ea71f41d654a07330d3c263d2 Assembly-CSharp.dll:.NetManagerCustom
+5d764acf8050977d3cbef05e269161f9 Assembly-CSharp.dll:.NetManagerCustom
 ccd25ccca39fd5159c3471f7762e1ced Assembly-CSharp.dll:.OVRChromaticAberration
 3390da0fa445ab5d676b24efb56cf5c0 Assembly-CSharp.dll:.OVRSceneSampleController
 a69297cb350136754b977bc92d69d22f Assembly-CSharp.dll:Valve.VR.InteractionSystem.TeleportArea
@@ -460,3 +462,6 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DefaultTrackableEventHandler
+d94661d6a7f7fcc5df5a6f56efb62a31 Assembly-CSharp.dll:.ARPlayerScript
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DefaultInitializationErrorHandler

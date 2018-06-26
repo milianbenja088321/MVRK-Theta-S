@@ -16,10 +16,13 @@ public class MsgTypes
 
 public class NetManagerCustom : NetworkManager
 {
+    [SerializeField] string ipAddr = "192.168.0.28";
+    [SerializeField] int port = 7777;
+
     // in the Network Manager component, you must put your player prefabs 
     // in the Spawn Info -> Registered Spawnable Prefabs section 
     public short playerPrefabIndex;
-    
+    public GameObject canv = null;
 
     public override void OnStartServer()
     {
@@ -54,6 +57,45 @@ public class NetManagerCustom : NetworkManager
         MsgTypes.PlayerPrefabMsg msg = new MsgTypes.PlayerPrefabMsg();
         msg.controllerID = playerControllerId;
         NetworkServer.SendToClient(conn.connectionId, MsgTypes.PlayerPrefab, msg);
+    }
+
+    public void SetPort()
+    {
+        NetworkManager.singleton.networkPort = port;
+    }
+
+    public void SetAddress()
+    {
+        NetworkManager.singleton.networkAddress = ipAddr;
+    }
+
+    public void StartupHost()
+    {
+        SetPort();
+        NetworkManager.singleton.StartHost();
+
+    }
+
+    public override NetworkClient StartHost()
+    {
+        if (canv != null)
+        {
+            canv.SetActive(false);
+        }
+        return base.StartHost();
+
+    }
+
+    public void JoinGame()
+    {
+        SetAddress();
+        SetPort();
+        NetworkManager.singleton.StartClient();
+        if (canv != null)
+        {
+            canv.SetActive(false);
+        }
+
     }
 
     // The index will be the number from the registered spawnable prefabs that 

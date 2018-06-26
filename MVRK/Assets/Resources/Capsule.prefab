@@ -41,10 +41,9 @@ GameObject:
   - component: {fileID: 136124460030589250}
   - component: {fileID: 23953221930797078}
   - component: {fileID: 114438689012731760}
-  - component: {fileID: 114146210555059376}
   - component: {fileID: 114051277975710068}
   - component: {fileID: 114084069909409286}
-  - component: {fileID: 114878136981265400}
+  - component: {fileID: 114726914579738322}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: ARPlayer
@@ -86,14 +85,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1578492999722254}
-  m_LocalRotation: {x: 0.6919262, y: -0.14573312, z: 0.14573309, w: 0.69192624}
-  m_LocalPosition: {x: 0.226, y: 0, z: 0.382}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0.2}
   m_LocalScale: {x: 0.1, y: 0.5, z: 0.1}
   m_Children:
   - {fileID: 4001033429981876}
   m_Father: {fileID: 4726517279433086}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 23.788002}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &4726517279433086
 Transform:
   m_ObjectHideFlags: 1
@@ -243,18 +242,6 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
---- !u!114 &114146210555059376
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1637710658453542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c595ecd30514864e8a83093fa67e2f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileSpawn: {fileID: 4001033429981876}
 --- !u!114 &114438689012731760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -266,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481dce137d9f68f49a1b5ca88cec68f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114878136981265400
+--- !u!114 &114726914579738322
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -274,11 +261,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1637710658453542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 746ac0ee64906da4ead93702fb31ab66, type: 3}
+  m_Script: {fileID: 11500000, guid: 83bf2e570915ff94cbf02a9aef3f0269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  bulletSpawn: {fileID: 0}
+  projObject: {fileID: 1177060789518982, guid: 6788b6071d68be749ad4ed0273d6ed18, type: 2}
+  projectileSpawn: {fileID: 4001033429981876}
+  timer: 0
+  didShoot: 0
 --- !u!136 &136124460030589250
 CapsuleCollider:
   m_ObjectHideFlags: 1

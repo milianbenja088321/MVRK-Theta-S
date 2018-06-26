@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AYloKXD/////AAAAGRwO0zbW0kPhtnf64kl5PIiNU1bvh4yO8FDJW9RgN9GfjDKCrDcUQpmZUWEtK7aRlGZyl24mSwAfDA/rqGcXaQSCPSxn8evTqC80f8fNHbyJVmzh09F49JcEGyOLRVRVv2yUQwxwhkJafpleVcBLnva2xyrC8dWJn9XHuW9gtGrD0DQfY+Qb0fxwDdajg97PJF/vV/zaetFoulM0FnvYGr/tnR6LYSrC+23ms8IeQOI/m5pFD5afPxN/Xe1eqqISxQyyza35aPHy6QxxgiRG44ct+tVkMVpD20of8hYdNmDrFB0hzUIi1FRrD/JLcLLwH9VhrXtLowm1DP+UxPBgCFXgdIt+EyM9RRLttCipv5qt
-    ufoLicenseKey: QVVuNHBBZi8vLy8vQUFBQUtQWm9iVWh2S2tjMnZZa1pJM2h1dkxWMFdHdXZrR1VIYTRIRllZOWZ3aU9Rc1lzem13TzlESUFuVlZIbS9TTDNvUVhTNnZ4TDA0aWZoUzlwY3RGQnd2aS9oZGo5TCtHTFpkR1NQNjBvK3JWSmJ3ZkcwZnlqUnhqSTlqQUs2eTk2djl3ZXpPWUZuczdicXNLTkc1N2lnRG9NQ1k1N3d2dWVnZm50Z1JGNGNOUWc3ZnIwaG9OU3lrQjBoVlUvTGdBRDAxMnluNUpGdXlmSW44NEE4Zy8yZFNVODdsRm5EYmtDWEdKUU9IcEt0c01KV0t1OVpzdkFXNDdsUExBVVc1R0dpT293MExUUEdvaGZKUnRyMGJFS2crd1NYaUhzcTFKRGgvcndRRmZxRDJ1eDJ5Si9oWCt6Z01MUm9Tc3A0ODh4dkw2enlKUjZWSGpyVkZ6SnNwaEd4NFpNZlA4bmFRVzNxZ2w3VERtUE5MNVE=
+    ufoLicenseKey: QWVNWWkyVC8vLy8vQUFBQUtKcGVWblpvNWt6YmtvR2RuMEF5YnNReEp0R3NFcHdBSXphSjd3UDZsYitlN2VRQ0FpMHdic3ByR1U3NU5JS0RrSmtieU1qV1VOTUpIdHFpWmduQzlnbE9BcDE5WkNSank5ZlZKaWduWjZiZXBnejFneGQ0VGRJQ0ROaVpvRkt1RHhZb3ZjVVBiTDREZXkyNERzQjJGRzhha3lrZ0tNS2NKR29xK1ZlSjcxVUQ5MHNZTkxaaGNRdFozRUYxQndXalNodFkybFBiSnFwRHM1ekdpcGh6S0xieERxZGVvUDM4Wkl1MWJSaGFvV1dqODQ3L0phL2FsQndTVnhJdkxlc0x4RDdROGZpVmJoeEtWSXlaOEJUbXZjeUxiYU9CVDRGczd5M0ZndURkVUJTRHlMQ0V5bW82M3ZDR0FJRkpWSFdDcGwyYWFvN2FUYnZ3TzB4NURBdWs4UlRDbnIwMmxkVk5vcXhEZzJFa0hNWUQ=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -54,11 +54,6 @@ MonoBehaviour:
       type: 0}
     matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
-  smartTerrainTracker:
-    autoInitTracker: 0
-    autoStartTracker: 0
-    autoInitBuilder: 0
-    sceneUnitsToMillimeter: 0
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
@@ -67,6 +62,9 @@ MonoBehaviour:
     modelCorrectionMode: 0
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
+  smartTerrain:
+    autoInitTracker: 0
+    autoStartTracker: 0
   webcam:
     deviceNameSetInEditor: 
     flipHorizontally: 0

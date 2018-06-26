@@ -4,19 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private Health myHealth = null;
 
-
-    // Update is called once per frame
+    private void Start()
+    {
+        myHealth = this.GetComponent<Health>();
+    }
     void Update()
     {
-
-        //if (photonView.isMine)
-        //{
-        //    Debug.Log("SetPlayerPosition being called");
-        //    SetPlayerPosition();
-        //}
-
-        
+        SetPlayerPosition();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -24,6 +20,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "projectile")
         {
             Debug.Log("Hello Projectile ********************************************");
+            myHealth.TakeDamage(collision.gameObject.GetComponent<Projectile>().GetDamage());
         }
     }
 
@@ -32,11 +29,17 @@ public class PlayerController : MonoBehaviour
         GameObject head = GameObject.FindGameObjectWithTag("Head");
         GameObject saber = GameObject.FindGameObjectWithTag("RHand");
 
+
         if (head)
         {
+            Debug.Log("Head not null");
             Transform headTransform = transform.Find("Player Head");
             headTransform.position = head.transform.position;
             headTransform.rotation = head.transform.rotation;
+        }
+        else
+        {
+            Debug.Log("head is null");
         }
 
         if (saber)
@@ -44,6 +47,10 @@ public class PlayerController : MonoBehaviour
             Transform saberTransform = transform.Find("Sword");
             saberTransform.position = saber.transform.position;
             saberTransform.rotation = saber.transform.rotation;
+        }
+        else
+        {
+            Debug.Log("saber is null");
         }
     }
 }
