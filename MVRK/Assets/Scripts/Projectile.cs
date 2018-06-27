@@ -17,10 +17,10 @@ public class Projectile : MonoBehaviour
 
 
     [SerializeField] float speed = 10.0f;
-    [SerializeField] float damage = 5;
+    [SerializeField] float damage = 10;
     [SerializeField] Text canvsText;
 
-    public float timer = 3f;
+    public float timer = 5f;
     int ID;
     int count = 0;
 
@@ -39,7 +39,7 @@ public class Projectile : MonoBehaviour
 
         if (timer <= 0)
         {
-            //  PhotonNetwork.Destroy(this.GetComponent<PhotonView>()); ;
+            Network.Destroy(this.gameObject);
         }
     }
 

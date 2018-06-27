@@ -276,9 +276,8 @@ PlayerSettings:
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings:
   - m_BuildTarget: Android
-    m_Enabled: 1
-    m_Devices:
-    - Oculus
+    m_Enabled: 0
+    m_Devices: []
   - m_BuildTarget: Metro
     m_Enabled: 0
     m_Devices: []
@@ -302,7 +301,7 @@ PlayerSettings:
     m_Enabled: 0
     m_Devices: []
   - m_BuildTarget: Standalone
-    m_Enabled: 0
+    m_Enabled: 1
     m_Devices:
     - OpenVR
     - Oculus
@@ -332,7 +331,7 @@ PlayerSettings:
     m_Devices: []
   m_BuildTargetEnableVuforiaSettings:
   - m_BuildTarget: Android
-    m_Enabled: 1
+    m_Enabled: 0
   - m_BuildTarget: Standalone
     m_Enabled: 0
   openGLRequireES31: 0

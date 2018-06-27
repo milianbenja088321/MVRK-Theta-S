@@ -6,7 +6,7 @@ public class CameraDetect : MonoBehaviour
 {
 
     string camName = "THETA UVC FullHD Blender";
-    int cameraIndex;
+    public int cameraIndex = 1;
     [SerializeField] Material test = null;
 
     WebCamDevice[] devices;
@@ -31,7 +31,7 @@ public class CameraDetect : MonoBehaviour
         }
         WebCamTexture mycam = new WebCamTexture(100000, 100000);
 
-        string camName = devices[0].name;
+        string camName = devices[cameraIndex].name;
         Debug.Log("The webcam name is " + camName);
 
         mycam.deviceName = camName;

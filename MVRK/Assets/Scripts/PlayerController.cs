@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Health myHealth = null;
+    [SerializeField] private NetworkedHealth myHealth = null;
+    public float phealth;
+    private float mHealth = 100;
+    public bool isDead;
 
     private void Start()
     {
-        myHealth = this.GetComponent<Health>();
+        phealth = mHealth;
+        isDead = false;
     }
+
     void Update()
     {
-        SetPlayerPosition();
+        phealth = mHealth;
+        //SetPlayerPosition();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -20,7 +26,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "projectile")
         {
             Debug.Log("Hello Projectile ********************************************");
-            myHealth.TakeDamage(collision.gameObject.GetComponent<Projectile>().GetDamage());
+            TakeDamage((int)collision.gameObject.GetComponent<Projectile>().GetDamage());
         }
     }
 
@@ -51,6 +57,18 @@ public class PlayerController : MonoBehaviour
         else
         {
             Debug.Log("saber is null");
+        }
+    }
+
+    private void TakeDamage(int amount)
+    {
+        Debug.Log("TakeDamage()::");
+        mHealth -= amount;
+
+        if (mHealth <= 0)
+        {
+            mHealth = 0;
+            isDead = true;
         }
     }
 }

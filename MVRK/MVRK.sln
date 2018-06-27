@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVRK", "MVRK.csproj", "{38078A0C-F619-4481-309E-4D36F93E9374}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVRK.Plugins", "MVRK.Plugins.csproj", "{EA88E6E1-A4D7-119D-BD01-C9A654713593}"

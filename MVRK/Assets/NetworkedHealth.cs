@@ -13,7 +13,8 @@ public class NetworkedHealth : NetworkBehaviour
     
    public void TakeDamage(int amount)
     {
-        if (!isServer) return;
+        // if (!isServer) return;
+        Debug.Log("TakeDamage::()");
 
         mHealth -= amount;
 

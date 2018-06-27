@@ -27,7 +27,7 @@ public class ARPlayerScript : NetworkBehaviour
             if (Input.GetKeyDown(KeyCode.Space) ||Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
             {
 
-
+                Debug.Log("Shooting!");
                 CmdShoot();
             }
         }
