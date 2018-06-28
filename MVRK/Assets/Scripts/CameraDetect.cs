@@ -20,7 +20,6 @@ public class CameraDetect : MonoBehaviour
     {
 
         Application.targetFrameRate = 60;
-        Application.RequestUserAuthorization(UserAuthorization.WebCam);
         WebCamDevice[] devices = WebCamTexture.devices;
         Debug.Log("Number of web cams connected: " + devices.Length);
         Renderer rend = this.GetComponentInChildren<Renderer>();
@@ -29,7 +28,7 @@ public class CameraDetect : MonoBehaviour
         {
             Debug.Log(i + ": " + devices[i].name);
         }
-        WebCamTexture mycam = new WebCamTexture(100000, 100000);
+        WebCamTexture mycam = new WebCamTexture(1920, 1080, 60);
 
         string camName = devices[cameraIndex].name;
         Debug.Log("The webcam name is " + camName);
@@ -40,16 +39,16 @@ public class CameraDetect : MonoBehaviour
         cam = mycam;
     }
 
-    private void Update()
-    {
+    //private void Update()
+    //{
 
-        //deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
-        //float fps = 1.0f / deltaTime;
-        //Debug.Log(Mathf.Ceil(fps).ToString());
+    //    deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
+    //    float fps = 1.0f / deltaTime;
+    //    Debug.Log(Mathf.Ceil(fps).ToString());
 
-        Debug.Log("Width: " + cam.width + " " + "Height: " + cam.height);
+    //    Debug.Log("Width: " + cam.width + " " + "Height: " + cam.height);
 
-    }
+    //}
 }
 
 

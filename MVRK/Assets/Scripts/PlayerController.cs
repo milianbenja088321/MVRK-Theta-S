@@ -63,8 +63,9 @@ public class PlayerController : MonoBehaviour
     private void TakeDamage(int amount)
     {
         Debug.Log("TakeDamage()::");
+      
         mHealth -= amount;
-
+        Debug.Log("Health:: " + mHealth);
         if (mHealth <= 0)
         {
             mHealth = 0;

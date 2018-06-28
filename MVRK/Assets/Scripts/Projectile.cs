@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour
 
 
     [SerializeField] float speed = 10.0f;
-    [SerializeField] float damage = 10;
+    [SerializeField] int damage = 10;
     [SerializeField] Text canvsText;
 
     public float timer = 5f;
@@ -55,7 +55,7 @@ public class Projectile : MonoBehaviour
         {
             Debug.Log("AR Player was hit");
             hit = collision.gameObject;
-            Health health = hit.GetComponent<Health>();
+            CollisionTestScript health = hit.GetComponent<CollisionTestScript>();
 
             if (health != null) { health.TakeDamage(damage); }
         }

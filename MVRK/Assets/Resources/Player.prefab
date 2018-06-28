@@ -73,10 +73,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4489174805979962}
-  - component: {fileID: 114201023230249872}
   - component: {fileID: 114012288711506724}
   - component: {fileID: 114298446284327576}
-  - component: {fileID: 114618563406926206}
+  - component: {fileID: 114185123443578574}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -411,6 +410,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 21275e4017fbf7042955c563e6e590f5, type: 2}
   m_StaticBatchInfo:
@@ -445,6 +445,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 21275e4017fbf7042955c563e6e590f5, type: 2}
   m_StaticBatchInfo:
@@ -479,6 +480,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 73e14f2f950f3de488ee82914cc3939b, type: 2}
   m_StaticBatchInfo:
@@ -513,6 +515,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -547,6 +550,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 21275e4017fbf7042955c563e6e590f5, type: 2}
   m_StaticBatchInfo:
@@ -581,6 +585,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 91168c7c46b3a4e4cb41f0bb78218d3c, type: 2}
   m_StaticBatchInfo:
@@ -615,6 +620,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 21275e4017fbf7042955c563e6e590f5, type: 2}
   m_StaticBatchInfo:
@@ -649,6 +655,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 45bddd2f1f823bb4288a1c2ed07c1f0f, type: 2}
   m_StaticBatchInfo:
@@ -683,6 +690,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -717,6 +725,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 73e14f2f950f3de488ee82914cc3939b, type: 2}
   m_StaticBatchInfo:
@@ -1005,6 +1014,19 @@ MonoBehaviour:
   instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
+--- !u!114 &114185123443578574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1564379703731066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123667a11fd49744892c968eee11a176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mHealth: 100
+  isDead: 0
 --- !u!114 &114191139276612542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1070,20 +1092,6 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
---- !u!114 &114201023230249872
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1564379703731066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4ef1eafefefc4db9434e8e5403fcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myHealth: {fileID: 114618563406926206}
-  phealth: 0
-  isDead: 0
 --- !u!114 &114298446284327576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1119,18 +1127,6 @@ MonoBehaviour:
   myHealth: {fileID: 0}
   phealth: 0
   isDead: 0
---- !u!114 &114618563406926206
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1564379703731066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc1cafd02be41f446a76c18834e7eb74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mHealth: 100
 --- !u!120 &120606941895820988
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -1144,6 +1140,7 @@ LineRenderer:
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 0}
   m_StaticBatchInfo:
@@ -1174,12 +1171,15 @@ LineRenderer:
     widthCurve:
       serializedVersion: 2
       m_Curve:
-      - serializedVersion: 2
+      - serializedVersion: 3
         time: 0
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
