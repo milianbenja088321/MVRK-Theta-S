@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/AVProLiveCamera/Demos/DefaultCameraDemo.unity
+- path: Assets/AVProLiveCamera/Demos/BackgroundDemo.unity
   isLoaded: 1
   isActive: 1

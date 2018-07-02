@@ -454,8 +454,8 @@ public class OVROverlay : MonoBehaviour
 							Graphics.CopyTexture(tempRTDst, 0, 0, et, face, mip);
 						}
 #else
-						//HACK: It would be much more efficient to blit directly from textures[eyeId] to et, but Unity's API doesn't support that.
-						//Suggest using a native plugin to render directly to a cubemap layer for 360 video, etc.
+                        //HACK: It would be much more efficient to blit directly from textures[eyeId] to et, but Unity's API doesn't support that.
+                        //Suggest using a native plugin to render directly to a cubemap layer for 360 video, etc.
 						Graphics.CopyTexture(textures[eyeId], face, mip, tempRTSrc, 0, 0);
 						// The PC compositor uses premultiplied alpha, so multiply it here.
 						Graphics.Blit(tempRTSrc, tempRTDst, premultiplyMaterial);

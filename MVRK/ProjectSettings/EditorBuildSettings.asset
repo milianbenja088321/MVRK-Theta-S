@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AR Scene.unity
     guid: 23bbaa3e3a4db2a4bab88cb0b8831491
   - enabled: 0
@@ -14,3 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/PlayerPrefabPickerTest.unity
     guid: 83a234babac4c834e92d58c6d9e68a49
+  - enabled: 1
+    path: Assets/AVProLiveCamera/Demos/BackgroundDemo.unity
+    guid: 8959a3c97de238b429512756c923ad53
+  m_configObjects: {}

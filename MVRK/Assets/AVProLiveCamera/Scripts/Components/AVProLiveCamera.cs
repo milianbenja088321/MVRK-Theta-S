@@ -148,18 +148,10 @@ namespace RenderHeads.Media.AVProLiveCamera
 			}
 		}
 
-        float timer = .01f;
 
 		private void Update()
 		{
-            timer -= Time.deltaTime;
-
-            if (timer <= 0)
-            {
-                Debug.Log("Collecting:: Shit!");
-                System.GC.Collect();
-                timer = .01f;
-            }
+           
 			if (_device != null)
 			{
 				if (_flipX != _device.FlipX)
@@ -232,7 +224,7 @@ namespace RenderHeads.Media.AVProLiveCamera
 						// Try again to get the frame
 						if (!Render())
 						{
-							//Debug.Log("frame dropped :(");
+							Debug.Log("frame dropped :(");
 						}
 					}
 					else

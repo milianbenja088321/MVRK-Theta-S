@@ -378,7 +378,7 @@ public class SteamVR_LoadLevel : MonoBehaviour
 
 		yield return null;
 
-		System.GC.Collect();
+		//.GC.Collect();
 
 		yield return null;
 
