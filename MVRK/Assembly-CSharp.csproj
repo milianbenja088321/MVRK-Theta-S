@@ -136,7 +136,6 @@
     <Compile Include="Assets\Scripts\CameraDetect.cs" />
     <Compile Include="Assets\Scripts\CollisionCheck.cs" />
     <Compile Include="Assets\Scripts\DDOL.cs" />
-    <Compile Include="Assets\Scripts\DisableVuforia.cs" />
     <Compile Include="Assets\Scripts\EnableOnLoadVR.cs" />
     <Compile Include="Assets\Scripts\ExplosionScript.cs" />
     <Compile Include="Assets\Scripts\FindCameraAndSet.cs" />
